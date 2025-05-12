@@ -1,9 +1,9 @@
 name: Release
 
-on:
-  push:
-    branches:
-      - main
+#on:
+#  push:
+#    tags:
+#      - 'v*' # ex: v1.2.3
 
 permissions:
   contents: write
@@ -45,3 +45,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
